@@ -45,18 +45,17 @@ int pop_front(deque*d) {
 	free(d);
 }
 int main() {
-	deque* d=NULL;
+	deque* d=(deque*)malloc(sizeof(deque));
 	char in[10];
 
 	printf("명령어수 입력:");
 	int n;
 	scanf_s("%d", &n);
-	for (int i = 0; i < n; i++) {
+	int i; 
+	for (i = 0; i < n; i++) {
 		printf("명령어 입력");
-		scanf_s("%s", in, 10);
+		scanf_s("%s", in);
 		if (strcmp("push_front", in) == 0) {
-
-			d = (deque*)malloc(sizeof(deque));
 			int a;
 			scanf_s("%d", &a);
 			push_front(d, a);
