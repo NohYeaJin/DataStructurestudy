@@ -88,12 +88,12 @@ void	pop_back(t_deque *d)
 		printf("-1\n");
 		return ;
 	}
-	printf("%d\n",d->front->next->data);
+	printf("%d\n",d->back->before->data);
 	
-	t_node *remem_node = d->front->next;
+	t_node *remem_node = d->back->before;
 	
-	d->front->next = remem_node->next;
-	remem_node->next->before = d->front;
+	d->back->before->before->next = remem_node->next;
+	remem_node->next->before = d->back->before->before;
 	free(remem_node);
 	(d->data_num)--;
 }
