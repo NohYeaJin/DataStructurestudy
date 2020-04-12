@@ -1,4 +1,12 @@
 ﻿  10866.c
-C:\Users\김예진\source\자료구조\백준 10866 덱\백준 10866 덱\10866.c(45,6): warning C4013: 'free'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-C:\Users\김예진\source\자료구조\백준 10866 덱\백준 10866 덱\10866.c(59,22): warning C4013: 'malloc'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-  백준 10866 덱.vcxproj -> C:\Users\김예진\source\자료구조\백준 10866 덱\Debug\백준 10866 덱.exe
+C:\github_study\DataStructurestudy\백준 10866 덱\백준 10866 덱\10866.c(45,6): warning C4013: 'free'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\github_study\DataStructurestudy\백준 10866 덱\백준 10866 덱\10866.c(49,20): warning C4013: 'malloc'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\github_study\DataStructurestudy\백준 10866 덱\백준 10866 덱\10866.c(63,17): warning C4047: '함수': 'deque *'의 간접 참조 수준이 'deque **'과(와) 다릅니다.
+C:\github_study\DataStructurestudy\백준 10866 덱\백준 10866 덱\10866.c(63,17): warning C4024: 'push_front': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+C:\github_study\DataStructurestudy\백준 10866 덱\백준 10866 덱\10866.c(66,25): warning C4047: '함수': 'deque *'의 간접 참조 수준이 'deque **'과(와) 다릅니다.
+C:\github_study\DataStructurestudy\백준 10866 덱\백준 10866 덱\10866.c(66,25): warning C4024: 'front': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+C:\github_study\DataStructurestudy\백준 10866 덱\백준 10866 덱\10866.c(73,29): warning C4047: '함수': 'deque *'의 간접 참조 수준이 'deque **'과(와) 다릅니다.
+C:\github_study\DataStructurestudy\백준 10866 덱\백준 10866 덱\10866.c(73,29): warning C4024: 'pop_front': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+C:\github_study\DataStructurestudy\백준 10866 덱\백준 10866 덱\10866.c(57,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : 'scanf' 선언을 참조하십시오.
+  백준 10866 덱.vcxproj -> C:\github_study\DataStructurestudy\백준 10866 덱\Debug\백준 10866 덱.exe
