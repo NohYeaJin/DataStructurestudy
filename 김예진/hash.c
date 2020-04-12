@@ -10,13 +10,13 @@ void insert(int M,hash *h,int num) {
 	int address = hashCode(M, num);
 	h->arr[address] = num;
 }
-void search(int num,hash* h,int M) {
+int search(int num,hash* h,int M) {
 	int address = hashCode(M, num);
 	if (h->arr[address] == num) {
-		printf("%d", 1);
+		return 1;
 	}
 	else {
-		printf("%d", 0);
+		return 0;
 	}
 }
 void delete(int num, hash* h, int M) {
@@ -59,6 +59,7 @@ int main() {
 		case 'd':
 			scanf_s("%d", &num);
 			delete(num, &h, M);
+			break;
 
 		case 'e':
 			return;
