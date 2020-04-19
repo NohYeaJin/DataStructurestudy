@@ -3,7 +3,7 @@
 #include <string.h>
 
 typedef struct tagNode {
-	int key = NULL;
+	int key = 0;
 	int value;
 }Node;
 
