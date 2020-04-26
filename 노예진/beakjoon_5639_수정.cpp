@@ -14,7 +14,7 @@ Node* CreateNode(int data) {
 	NewNode->Left = NULL;
 	NewNode->Right = NULL;
 	NewNode->Parent = NULL;
-
+	NewNode->data = data;
 	return NewNode;
 }
 
@@ -44,16 +44,16 @@ Node* FindLoc(Node* Parent, int data) {
 				Parent->Right = FindLoc(Parent->Right, data);
 			}
 		}
-		
+
 	}
 	return Parent;
 }
 
 int main(void) {
-	
+
 	Node* Tree = NULL;
 	int num = 0;
-	while(scanf("%d",&num) != EOF) {
+	while (scanf("%d", &num) != EOF) {
 		Tree = FindLoc(Tree, num);
 	}
 	PostOrderPrintTree(Tree);
