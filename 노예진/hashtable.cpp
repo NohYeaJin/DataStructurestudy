@@ -3,7 +3,7 @@
 #include <string.h>
 
 typedef struct tagNode {
-	int key = NULL;
+	int key;
 	int value;
 }Node;
 
@@ -70,12 +70,12 @@ int main(void) {
 	int num;
 	int result;
 	HashTable* HT = CreateHashTable(10);
-	for (int i = 0; i < 10; i++) {
+	/*for (int i = 0; i < 10; i++) {
 		HT->Table[i].key = NULL;
-	}
+	}*/
 	for (int i = 0; i < 13; i++) {
 		printf("\n");
-		scanf("%s", &dir);
+		scanf("%s", dir);
 		if (strcmp(dir, "i") == 0) {
 			scanf("%d", &num);
 			set(HT, num);
