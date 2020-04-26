@@ -41,7 +41,7 @@ Node* FindLoc(Node* Parent, int data) {
 				Parent->Left = FindLoc(Parent->Left, data);
 			}
 			else {
-				Parent->Left = FindLoc(Parent->Right, data);
+				Parent->Right = FindLoc(Parent->Right, data);
 			}
 		}
 		
